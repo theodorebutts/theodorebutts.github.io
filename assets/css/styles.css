@@ -1,0 +1,266 @@
+* {
+
+}
+
+:root {
+    --primary-color: #4d6280;
+    --secondary-color: #6fccdd;
+    --tertiary-color: #f25774;
+    --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    --breakpoint-xs: 0;
+    --breakpoint-sm: 576px;
+    --breakpoint-md: 768px;
+    --breakpoint-lg: 992px;
+    --breakpoint-xl: 1200px;
+}
+
+html {
+    font-family: sans-serif;
+    line-height: 1.15;
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html {
+    font-family: sans-serif;
+    line-height: 1.15;
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+article,
+aside,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section {
+    display: block;
+}
+
+/* Header */
+header {
+    padding: 20px 35px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    background-image: url("../images/bgimage.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-position: 40%;
+    z-index: 9999;
+}
+
+header h1 {
+    font-size: 25px;
+    color: var(--secondary-color);
+    margin: 0;
+}
+
+header a {
+    text-decoration: none;
+    color: var(--secondary-color);
+}
+
+header nav {
+    margin: 7px 0;
+}
+
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+header nav ul li {
+    display: inline;
+}
+
+header nav ul li a {
+    padding: 10px 15px;
+    font-size: 1.25vw;
+}
+
+header nav ul li a:hover {
+    color: var(--tertiary-color);
+}
+
+/* Hero Styles */
+.hero {
+    background-image: url("../images/bgimage.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    color: #f2f2f2;
+    background-attachment: fixed;
+    background-position: 40%;
+}
+
+/* Section Styles */
+section {
+    padding: 60px;
+}
+
+.section-title {
+    font-size: 48px;
+    text-align: end;
+    margin: auto 10px ;
+    border-right: 3px solid;
+    padding-right: 1.55rem;
+}
+
+.primary-border {
+    border-color: var(--primary-color);
+}
+
+.secondary-border {
+    border-color: var(--secondary-color);
+}
+.row {
+    display: flex;
+}
+
+/* About Styles*/
+ /*test  */
+
+* {box-sizing: border-box;}
+
+.wrapper {
+    border: 2px solid #f76707;
+    border-radius: 5px;
+    background-color: #fff4e6;
+}
+
+.project {
+    border: 2px solid #ffa94d;
+    border-radius: 5px;
+    background-color: #ffd8a8;
+    padding: 1em;
+    color: #d9480f;
+}
+.wrapper {
+    display: grid;
+    grid-template-columns:  1fr 3fr;
+}
+ 
+
+
+
+
+/* .trainers {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.work {
+    margin: 0 auto 20px auto;
+    background: var(--secondary-color);
+    color: var(--primary-color);
+    flex: 1;
+}
+
+.work-img {
+    display: flex;
+    padding: 15px;
+    align-items: flex-end;
+    background-size: cover;
+    width: 100%;
+    min-height: 300px;
+    position: relative;
+    overflow: hidden;
+}
+
+  .work-img::after {
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(var(--primary-color), var(--secondary-color));
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.work:hover .work-img::after {
+    opacity: 1;
+}
+
+.work:hover .work-img h3, .work:hover .work-img h4 {
+    top: 0;
+}
+
+.work-bio {
+    padding: 25px;
+    line-height: 1.3;
+}
+*/
+/* Work Styles */
+
+  
+.work-grid-wrapper {
+    display: flex;
+    width: 80%;
+}
+
+.work-grid-container {
+
+}
+
+.work-grid-item {
+
+}
+
+
+/* Contact Styles */
+
+/* Footer Styles */
+footer {
+    background: var(--primary-color);
+    width: 100%;
+    padding: 40px 35px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+footer h2 {
+    color: var(--secondary-color);
+    font-size: 14px;
+    margin: 0;
+}
+
+footer div {
+    line-height: 1.5;
+    text-align: left;
+    color: var(--secondary-color);
+}
+
+footer a {
+    color: var(--secondary-color);
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: var(--tertiary-color);
+}
