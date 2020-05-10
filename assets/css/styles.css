@@ -94,7 +94,7 @@ header nav ul li {
 
 header nav ul li a {
     padding: 10px 15px;
-    font-size: 1.25vw;
+    font-size: 1.25;
 }
 
 header nav ul li a:hover {
@@ -120,10 +120,10 @@ section {
 
 .section-title {
     font-size: 48px;
-    text-align: end;
+    text-align: center;
     margin: auto 10px ;
-    border-right: 3px solid;
-    padding-right: 1.55rem;
+    border-bottom: 3px solid;
+
 }
 
 .primary-border {
@@ -133,105 +133,66 @@ section {
 .secondary-border {
     border-color: var(--secondary-color);
 }
-.row {
-    display: flex;
-}
+
 
 /* About Styles*/
- /*test  */
 
-* {box-sizing: border-box;}
+/* Work Styles */
 
-.wrapper {
-    border: 2px solid #f76707;
-    border-radius: 5px;
-    background-color: #fff4e6;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.project {
-    border: 2px solid #ffa94d;
-    border-radius: 5px;
-    background-color: #ffd8a8;
-    padding: 1em;
-    color: #d9480f;
-}
-.wrapper {
-    display: grid;
-    grid-template-columns:  1fr 3fr;
-}
- 
-
-
-
-
-/* .trainers {
-    width: 100%;
-    margin: 0 auto;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
-
-.work {
-    margin: 0 auto 20px auto;
-    background: var(--secondary-color);
-    color: var(--primary-color);
-    flex: 1;
-}
-
-.work-img {
-    display: flex;
-    padding: 15px;
-    align-items: flex-end;
-    background-size: cover;
-    width: 100%;
-    min-height: 300px;
+.container {
     position: relative;
-    overflow: hidden;
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-rows: minmax(100px, auto));
+    margin: 40px;
+    grid-auto-flow: dense;
+    grid-gap: 10px;
+
 }
 
-  .work-img::after {
-    content: "";
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background: linear-gradient(var(--primary-color), var(--secondary-color));
-    opacity: 0;
+.container .box {
+    background: lightcoral;
+    padding: 20px;
+    display: grid;
+    font-size: 18px;
+    place-items: left;
+    text-align: left;
+    color: #fff;
     transition: 0.5s;
 }
 
-.work:hover .work-img::after {
-    opacity: 1;
+.container .box:hover {
+    background: rgba(101, 230, 253, 0.8);
 }
 
-.work:hover .work-img h3, .work:hover .work-img h4 {
-    top: 0;
+.container .box img {
+    position: relative;
+    max-width: 100px;
+    margin-bottom: 10px;
 }
 
-.work-bio {
-    padding: 25px;
-    line-height: 1.3;
-}
-*/
-/* Work Styles */
-
-  
-.work-grid-wrapper {
-    display: flex;
-    width: 80%;
+.container .box:nth-child(1) {
+    grid-column: span 3;
+    grid-row: span 1;
 }
 
-.work-grid-container {
-
+@media (max-width: 991px) {
+    .container {
+        grid-template-columns: repeat(auto-fit, minmax(50%, 1fr));
+        grid-template-rows: minmax(auto, auto));
+    }
+    .container .box {
+        grid-column: unset !important;
+        grid-row: unset !important;
+    }
 }
-
-.work-grid-item {
-
-}
-
-
 /* Contact Styles */
 
 /* Footer Styles */
