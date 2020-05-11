@@ -178,8 +178,12 @@ section {
     transition: 0.5s;
 }
 
+.container .box a {
+    align-content: flex-end;
+}
+
 .container .box:hover {
-    background: var(--secondary-color);
+    background: var(--secondary-color) 25%;
 }
 
 .container .box:nth-child(1) {
@@ -188,7 +192,7 @@ section {
 }
 
 .p1 {
-    background-image: url(../images/BiAF.png);
+    background-image: url(../images/run_buddy.PNG);
     background-size: cover;
 }
 
@@ -203,7 +207,7 @@ section {
 }
 
 .p4 {
-    background-image: url(../images/WtM.png) ;
+    background-image: url(../images/BiAF.png) ;
     background-size: cover;
 }
 
