@@ -21,9 +21,9 @@
         <h1>THEODOREBUTTS</h1>
         <nav>
             <ul>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Portfolio</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#work">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
                 <li><a href="https://theodorebutts.com" target="_blank" >THEODOREBUTTS.COM</a></li>
             </ul>
         </nav>   
@@ -32,14 +32,19 @@
         <h1>Adding Beauty to the World One Design at a Time</h1>
     </section>
     <!-- About Me -->
-    <section class="about">
+    <section id="about">
         <div class="row">
             <h2 class="section-title primary-border">About Me</h2>
         </div>    
-            <article class="">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit corporis voluptates nisi in id enim necessitatibus accusantium et, velit magni repellat! Eos non in optio ducimus consequuntur necessitatibus dolorem quas?
+        <div class="about">
+            <div class="img">
+                <img src="./assets/images/profile.jpg" height="150px" />
+            </div>
+            <article class="summary">
+                <span id="sabout"> Designer. Photographer. Creator. </span ><br />
+                Creating beautiful designs for you or your business
             </article>
-        
+        </div>
     </section>
 
     <!-- Work -->
@@ -48,52 +53,63 @@
             <div class="row">
                 <h2 class="section-title primary-border">Work</h2>
             </div>
-
             <div class="container">
-                <div class="box">
-                    <div class="content">
-                        <h3>Most Recent</h3>
-                        <h4>Subheadding</h4>
-                    </div>
+                <div class="box p1">
+                    <a href="#">
+                        <div class="content">
+                            <h3>Project 1</h3>
+                            <h4>Most recent</h4>
+                        </div>
+                    </a>
                 </div>
-                <div class="box">
-                    <div class="content">
-                        <h3>Most Recent</h3>
-                        <h4>Subheadding</h4>
-                    </div>
+                <div class="box p2">
+                    <a href="#">
+                        <div class="content">
+                            <h3>Project title</h3>
+                            <h4>Subheadding</h4>
+                        </div>
+                    </a>
                 </div>
-                <div class="box">
-                    <div class="content">
-                        <h3>Most Recent</h3>
-                        <h4>Subheadding</h4>
-                    </div>
+                <div class="box p3">
+                    <a href="#">
+                        <div class="content">
+                            <h3>Project title</h3>
+                            <h4>Subheadding</h4>
+                        </div>
+                    </a>
                 </div>
-                <div class="box">
-                    <div class="content">
-                        <h3>Most Recent</h3>
-                        <h4>Subheadding</h4>
-                    </div>
+                <div class="box p4">
+                    <a href="#">
+                        <div class="content">
+                            <h3>Project title</h3>
+                            <h4>Subheadding</h4>
+                        </div>
+                    </a>
                 </div>
-                <div class="box">
-                    <div class="content">
-                        <h3>Most Recent</h3>
-                        <h4>Subheadding</h4>
-                    </div>
-                </div>
-                <div class="box">
-                    <div class="content">
-                        <h3>Most Recent</h3>
-                        <h4>Subheadding</h4>
-                    </div>
+                <div class="box p5">
+                    <a href="#">
+                        <div class="content">
+                            <h3>Project title</h3>
+                            <h4>Subheadding</h4>
+                        </div>
+                    </a>
                 </div>
             </div>
     </section> 
     
     <!-- Contact -->
     <section class="contact primary-border">
-        <div class="row">
+
             <h2 class="section-title primary-border">Contact</h2>
-        </div>
+
+        <article class="contact">
+            <div class="row">
+                <ul>
+                    <li><span>Phone: </span><a href="tel:555.555.5555">555.555.5555</a></li>
+                    <li><span>Email:</span> <a href="mailto://contact@theodorebutts.com">contact@theodorebutts.com</a></li>
+                </ul>
+            </div>
+        </article>
 
     </section>
     <!-- Footer -->
@@ -102,6 +118,10 @@
         <div>
             See my full portfolio at <a href="https://theodorebutts.com" target="_blank">THEODOREBUTTS.com</a>
         </div>
+        <article>
+            <a href="https://instagram.com/teddy_butts"><i class="fab fa-twitter"></i></a>
+            <a href="https://instagram.com/teddy_butts"><i class="fab fa-instagram"></i></a>
+        </article>    
     </footer>
 </body>
 </html>
