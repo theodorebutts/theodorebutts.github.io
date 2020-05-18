@@ -183,7 +183,7 @@ section {
 }
 
 .container .box:hover {
-    background: var(--secondary-color) 25%;
+    background: #6fccdd33 ;
 }
 
 .container .box:nth-child(1) {
