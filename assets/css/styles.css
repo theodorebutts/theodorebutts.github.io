@@ -192,12 +192,12 @@ section {
 }
 
 .p1 {
-    background-image: url(../images/run_buddy.PNG);
+    background-image: url(../images/personalDashboard.PNG);
     background-size: cover;
 }
 
 .p2 {
-    background-image: url(../images/AMPM.png) ;
+    background-image: url(../images/run_buddy.PNG) ;
     background-size: cover;
 }
 
