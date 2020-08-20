@@ -192,7 +192,7 @@ section {
 }
 
 .p1 {
-    background-image: url(../images/personalDashboard.PNG);
+    background-image: url(../images/timedOut.png);
     background-size: cover;
 }
 
@@ -202,7 +202,7 @@ section {
 }
 
 .p3 {
-    background-image: url(../images/WhiteRose.png) ;
+    background-image: url(../images/personalDashboard.PNG) ;
     background-size: cover;
 }
 
